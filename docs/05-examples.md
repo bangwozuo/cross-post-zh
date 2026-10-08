@@ -234,3 +234,25 @@
 ---
 
 *所有示例均已在资产校验测试中验证结构正确性*
+
+---
+
+## runs_v2 实跑示例（P1 深度改造回填）
+
+以下为 `runs_v2/cross-post-zh/` 已验证实跑数据摘要，各资产 `examples/input.json`
+已用同源真实输入回填；工作流产物可由 `scripts/run_flow.py --demo` 复现到 `out/`。
+
+| 资产 | 实跑输入摘要 | 实跑产出摘要 |
+|---|---|---|
+| topic-tag-recommend | 500ml 保温杯开箱文案（89 元/10 元券） | 标签池 3-7 个、3 套组合方案、无热度数据声明 |
+| colloquial-rewrite | 公告腔保温杯文案 → 小红书口语版（120 字内） | 正文约 88 字、4 条改动说明、事实零增删 |
+| platform-style-rewrite | 5 款保温杯实测长文 → 抖音 60 秒口播 | 约 190 字、钩子开场、6 条改动说明 |
+| sensitive-word-precheck | 含极限词的咖啡文案 | 5 项违规（极限词 3/功效 1/诱导好评 1），判定不通过 |
+| xhs-note-layout | 保温杯条目式文本 → Emoji 排版 | 7 个 Emoji、5 个文末标签、条目行结构 |
+| publish-calendar-generate | 4 条待发布条目 + 时段约束 | 3 条排入、1 条因小红书每日 1 篇上限未能排入 |
+| one-draft-multi-post-flow | 公众号原稿 → 三平台改写 | 抖音口播/小红书笔记/B站简介 + 排版核查 |
+| crosspost-compliance-adapt-flow | 咖啡文案合规校验 | S1 判定不过、违规 5 项逐条附原文片段，下游挂起 |
+| publish-schedule-table-flow | 4 条内容池 + 禁排日 | 4/4 排入，13 日晚两条按 20:30/21:30 错峰 |
+| publish-status-check-flow | 应发 4 条 × 实发 2 条 | 准时 2（偏差 ≤1 分钟）、漏发 2，含补发档位建议 |
+
+*runs_v2 实跑数据为脚本确定性输出与模型产物双轨验证结果*
