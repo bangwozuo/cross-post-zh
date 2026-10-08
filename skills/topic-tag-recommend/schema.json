@@ -1,0 +1,75 @@
+{
+  "skill_id": "de_media_05_sk03",
+  "name": "话题标签推荐",
+  "type": "atomic",
+  "input": {
+    "type": "object",
+    "required": [
+      "content"
+    ],
+    "properties": {
+      "content": {
+        "type": "string",
+        "description": "内容：需要打标签的文本"
+      },
+      "platform": {
+        "type": "string",
+        "description": "平台：目标平台（可选）"
+      }
+    }
+  },
+  "output": {
+    "type": "object",
+    "required": [
+      "tags",
+      "combination",
+      "basis"
+    ],
+    "properties": {
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "推荐标签，按优先级排列"
+      },
+      "combination": {
+        "type": "array",
+        "description": "标签搭配方案",
+        "items": {
+          "type": "object",
+          "properties": {
+            "方案": {
+              "type": "string"
+            },
+            "标签": {
+              "type": "string"
+            },
+            "适用场景": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "basis": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "标签选择的依据；无热度数据时须声明"
+      }
+    },
+    "x-rendered-from": "capability:tag"
+  },
+  "constraints": {
+    "max_input_length": 5000,
+    "forbidden_words": [
+      "最好",
+      "第一",
+      "100%"
+    ],
+    "ai_label_required": true,
+    "human_review_required": true,
+    "external_api_required": false
+  }
+}

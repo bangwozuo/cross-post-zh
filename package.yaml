@@ -1,0 +1,49 @@
+name: 分发改写师
+repo: bangwozuo/cross-post-zh
+legacy_name: 多平台分发改写师
+version: 0.2.0
+asset_type: prompt-only
+stage: P1
+complexity: M（主动放弃代发连接器后实际偏 S-M），总估 5-8 人日
+group: 自媒体创作者
+runtime_dependencies: none
+api_key_required: false
+demand_ids:
+  - D11
+  - D26
+
+workflows:
+  - name: 一稿多投改写
+    id: de_media_05_wf01
+  - name: 平台合规适配
+    id: de_media_05_wf02
+  - name: 定时发布排期表
+    id: de_media_05_wf03
+  - name: 发布状态核对
+    id: de_media_05_wf04
+
+skills:
+  - id: platform-style-rewrite
+    name: 平台风格改写
+    family: 
+  - id: xhs-note-layout
+    name: 小红书笔记排版
+    family: 
+  - id: topic-tag-recommend
+    name: 话题标签推荐
+    family: 
+  - id: publish-calendar-generate
+    name: 发布日历生成
+    family: 
+  - id: colloquial-rewrite
+    name: 口语化改写
+    family: 
+  - id: sensitive-word-precheck
+    name: 敏感词预审
+    family: 
+
+compliance:
+  ai_label_required: true
+  human_review_required: true
+  forbidden_words_check: true
+  official_api_only: true
