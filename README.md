@@ -4,8 +4,7 @@
 
 ![分发改写师 · 动态演示](docs/assets/hero.gif)
 
-*▲ 实时演示（自动循环）· [▶ 观看完整版合集视频](docs/demo.mp4)*
-
+*▲ 真实执行录播（自动循环播放）· [▶ 观看完整版合集视频](docs/demo.mp4)*
 
 [![Stage](https://img.shields.io/badge/stage-P1-orange)](https://github.com/bangwozuo)
 [![Asset](https://img.shields.io/badge/asset-prompt--only-blueviolet)](#资产形态)
@@ -113,11 +112,11 @@ cross-post-zh/
 
 | # | 技能 | 能力族 | 复杂度 | 提示词 | 文档 |
 |---|------|--------|--------|--------|------|
-| 1 | 平台风格改写 | 改写适配 | `S` | [prompt.txt](skills/platform-style-rewrite/prompt.txt) | [docs](skills/platform-style-rewrite/docs/) |
-| 2 | 小红书笔记排版 | 改写适配 | `S` | [prompt.txt](skills/xhs-note-layout/prompt.txt) | [docs](skills/xhs-note-layout/docs/) |
-| 3 | 话题标签推荐 | 标签话题 | `S` | [prompt.txt](skills/topic-tag-recommend/prompt.txt) | [docs](skills/topic-tag-recommend/docs/) |
-| 4 | 发布日历生成 | 排期调度 | `S` | [prompt.txt](skills/publish-calendar-generate/prompt.txt) | [docs](skills/publish-calendar-generate/docs/) |
-| 5 | 口语化改写 | 改写适配 | `S` | [prompt.txt](skills/colloquial-rewrite/prompt.txt) | [docs](skills/colloquial-rewrite/docs/) |
+| 1 | 平台风格改写 | 改写与适配 | `S` | [prompt.txt](skills/platform-style-rewrite/prompt.txt) | [docs](skills/platform-style-rewrite/docs/) |
+| 2 | 小红书笔记排版 | 改写与适配 | `S` | [prompt.txt](skills/xhs-note-layout/prompt.txt) | [docs](skills/xhs-note-layout/docs/) |
+| 3 | 话题标签推荐 | 标签与话题 | `S` | [prompt.txt](skills/topic-tag-recommend/prompt.txt) | [docs](skills/topic-tag-recommend/docs/) |
+| 4 | 发布日历生成 | 排期与调度 | `S` | [prompt.txt](skills/publish-calendar-generate/prompt.txt) | [docs](skills/publish-calendar-generate/docs/) |
+| 5 | 口语化改写 | 改写与适配 | `S` | [prompt.txt](skills/colloquial-rewrite/prompt.txt) | [docs](skills/colloquial-rewrite/docs/) |
 | 6 | 敏感词预审 | 合规校验 | `M` | [prompt.txt](skills/sensitive-word-precheck/prompt.txt) | [docs](skills/sensitive-word-precheck/docs/) |
 
 ## 工作流清单（4 条）
