@@ -110,23 +110,23 @@ cross-post-zh/
 
 ## 技能清单（6 个）
 
-| # | 技能 | 能力族 | 复杂度 | 提示词 | 文档 |
-|---|------|--------|--------|--------|------|
-| 1 | 平台风格改写 | 改写与适配 | `S` | [prompt.txt](skills/platform-style-rewrite/prompt.txt) | [docs](skills/platform-style-rewrite/docs/) |
-| 2 | 小红书笔记排版 | 改写与适配 | `S` | [prompt.txt](skills/xhs-note-layout/prompt.txt) | [docs](skills/xhs-note-layout/docs/) |
-| 3 | 话题标签推荐 | 标签与话题 | `S` | [prompt.txt](skills/topic-tag-recommend/prompt.txt) | [docs](skills/topic-tag-recommend/docs/) |
-| 4 | 发布日历生成 | 排期与调度 | `S` | [prompt.txt](skills/publish-calendar-generate/prompt.txt) | [docs](skills/publish-calendar-generate/docs/) |
-| 5 | 口语化改写 | 改写与适配 | `S` | [prompt.txt](skills/colloquial-rewrite/prompt.txt) | [docs](skills/colloquial-rewrite/docs/) |
-| 6 | 敏感词预审 | 合规校验 | `M` | [prompt.txt](skills/sensitive-word-precheck/prompt.txt) | [docs](skills/sensitive-word-precheck/docs/) |
+| # | 技能 | 能力族 | 复杂度 | 说明文档 |
+|---|------|--------|--------|----------|
+| 1 | 平台风格改写 | 改写与适配 | `S` | [README](skills/platform-style-rewrite/README.md) |
+| 2 | 小红书笔记排版 | 改写与适配 | `S` | [README](skills/xhs-note-layout/README.md) |
+| 3 | 话题标签推荐 | 标签与话题 | `S` | [README](skills/topic-tag-recommend/README.md) |
+| 4 | 发布日历生成 | 排期与调度 | `S` | [README](skills/publish-calendar-generate/README.md) |
+| 5 | 口语化改写 | 改写与适配 | `S` | [README](skills/colloquial-rewrite/README.md) |
+| 6 | 敏感词预审 | 合规校验 | `M` | [README](skills/sensitive-word-precheck/README.md) |
 
 ## 工作流清单（4 条）
 
-| # | 工作流 | 阶段 | 复杂度 | 触发 | 定义 | 文档 |
-|---|--------|------|--------|------|------|------|
-| 1 | 一稿多投改写 | `P1` | `S` | 人工（成稿后） | [SKILL.md](workflows/one-draft-multi-post-flow/SKILL.md) | [docs](workflows/one-draft-multi-post-flow/docs/) |
-| 2 | 平台合规适配 | `P1` | `S` | 事件（WF1 后自动） | [SKILL.md](workflows/crosspost-compliance-adapt-flow/SKILL.md) | [docs](workflows/crosspost-compliance-adapt-flow/docs/) |
-| 3 | 定时发布排期表 | `P1` | `S` | 定时（每周） | [SKILL.md](workflows/publish-schedule-table-flow/SKILL.md) | [docs](workflows/publish-schedule-table-flow/docs/) |
-| 4 | 发布状态核对 | `P1` | `S` | 定时（每日收尾） | [SKILL.md](workflows/publish-status-check-flow/SKILL.md) | [docs](workflows/publish-status-check-flow/docs/) |
+| # | 工作流 | 阶段 | 复杂度 | 触发 | 说明文档 |
+|---|--------|------|--------|------|----------|
+| 1 | 一稿多投改写 | `P1` | `S` | 人工（成稿后） | [README](workflows/one-draft-multi-post-flow/README.md) |
+| 2 | 平台合规适配 | `P1` | `S` | 事件（WF1 后自动） | [README](workflows/crosspost-compliance-adapt-flow/README.md) |
+| 3 | 定时发布排期表 | `P1` | `S` | 定时（每周） | [README](workflows/publish-schedule-table-flow/README.md) |
+| 4 | 发布状态核对 | `P1` | `S` | 定时（每日收尾） | [README](workflows/publish-status-check-flow/README.md) |
 
 ---
 
